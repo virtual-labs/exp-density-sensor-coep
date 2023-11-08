@@ -27,7 +27,7 @@ where ρ is mass per unit volume, A is cross sectional area, l is the length, EJ
 Equation (1) shows that the vibration frequency of the cantilever beam relates to the cross-sectional area and the length.
 
 #### Resonant Frequency Dependence on Liquid 
-Through the study on vibration of free-free beams under liquid [10], it is assumed that the liquid is ideal, incompressible and without spin, and based on the Laplace equation:
+Through the study on vibration of free-free beams under liquid, it is assumed that the liquid is ideal, incompressible and without spin, and based on the Laplace equation:
 ![*Turbine_constr2*](image4_formula3.png)
 
 we can get the liquid velocity potential function (x,z,t), and the changes of vibration frequency of a cantilever beam when the depth of the beam in the liquid changes. On this basis, we also have introduced the change of the first-order vibration frequency of the tuning fork when the depth in the liquid changes or the liquid density changes, as given by Equation (3) below: 
