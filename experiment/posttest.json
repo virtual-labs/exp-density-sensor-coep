@@ -2,9 +2,9 @@
   "version": 2.0,
   "questions": [
     {
-      "question": " What is the principle behind the operation of a vibrating tube density sensor?",
+      "question": "What is the principle behind the operation of a vibrating tube density sensor?",
       "answers": {
-         "a": "Refraction of light",
+        "a": "Refraction of light",
         "b": " Resonance frequency changes",
         "c": "Magnetic field variations",
         "d": "Electrochemical reactions"
@@ -26,7 +26,7 @@
       "difficulty": "Environmental humidity"
     },
     {
-      "question": "In the context of density sensors, what is "calibration," and why is it important?",
+      "question": "In the context of density sensors, what is calibration, and why is it important?",
       "answers": {
         "a": "Adjusting the sensor to a known standard; ensures accurate measurements",
         "b": "Cleaning the sensor components; enhances durability",
