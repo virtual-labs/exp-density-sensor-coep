@@ -2,38 +2,83 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": " What is the principle behind the operation of a vibrating tube density sensor?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+         "a": "Refraction of light",
+        "b": " Resonance frequency changes",
+        "c": "Magnetic field variations",
+        "d": "Electrochemical reactions"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      
+      "correctAnswer": "b",
+      "difficulty": "Resonance frequency changes"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which factor can affect the accuracy of a density sensor in a real-world application?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Environmental humidity",
+        "b": "Source voltage stability",
+        "c": "Color of the substance",
+        "d": "Magnetic interference"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+     
+      "correctAnswer": "a",
+      "difficulty": "Environmental humidity"
+    },
+    {
+      "question": "In the context of density sensors, what is "calibration," and why is it important?",
+      "answers": {
+        "a": "Adjusting the sensor to a known standard; ensures accurate measurements",
+        "b": "Cleaning the sensor components; enhances durability",
+        "c": "Upgrading the sensor firmware; improves performance",
+        "d": "Changing the sensor's physical structure; adapts to different substances"
       },
+     
+      "correctAnswer": "a",
+      "difficulty": "Adjusting the sensor to a known standard; ensures accurate measurements"
+    },
+	{
+      "question": "Which type of density sensor is commonly used in the food and beverage industry for quality control?",
+      "answers": {
+        "a": "Ultrasonic density sensor",
+        "b": "Coriolis mass flow meter",
+        "c": "Optical density sensor",
+        "d": "Capacitance density sensor"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "Capacitance density sensor"
+    },
+	
+	{
+      "question": "What role does temperature compensation play in a density sensor?",
+      "answers": {
+        "a": "Adjusts measurements based on substance color",
+        "b": "Accounts for variations in substance viscosity",
+        "c": "Corrects for temperature-induced density changes",
+        "d": "Enhances sensitivity to particle count"
+      },
+     
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "Corrects for temperature-induced density changes"
+    },
+  
+  {
+      "question": "Which of the following materials is commonly used in the construction of the sensing element in a density sensor?",
+      "answers": {
+        "a": "Aluminum",
+        "b": "Rubber",
+        "c": "Quartz",
+        "d": "PVC"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "Quartz"
     }
+  
+  
+  
+  
+  
   ]
 }

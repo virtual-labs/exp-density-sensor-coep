@@ -2,38 +2,72 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": " What is the primary purpose of a density sensor?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+         "a": " Measure temperature.",
+        "b": "Determine mass per unit volume",
+        "c": "Count particles in a substance",
+        "d": "Detect electromagnetic radiation"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      
+      "correctAnswer": "b",
+      "difficulty": "Determine mass per unit volume"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which physical property does a density sensor rely on for its measurements?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": " Color",
+        "b": "Viscosity",
+        "c": "Density",
+        "d": "Electrical conductivity"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+     
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "Density"
+    },
+    {
+      "question": "What type of substances can be measured using a density sensor?",
+      "answers": {
+        "a": "Gases only",
+        "b": "Liquids only",
+        "c": " Solids only",
+        "d": "Gases, liquids, and solids"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "Gases, liquids, and solids"
+    },
+	{
+      "question": "In which units is density commonly expressed?",
+      "answers": {
+        "a": " Grams per liter",
+        "b": "Meters per second",
+        "c": "Degrees Celsius",
+        "d": "Pascals"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "Grams per liter"
+    },
+	
+	{
+      "question": "How does a density sensor work in determining density?",
+      "answers": {
+        "a": "Measures resistance",
+        "b": "Calculates volume",
+        "c": "Analyzes pressure",
+        "d": "Divides mass by volume"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "Divides mass by volume"
     }
+  
+  
+  
+  
+  
+  
+  
   ]
 }
