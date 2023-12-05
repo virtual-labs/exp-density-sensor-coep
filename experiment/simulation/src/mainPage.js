@@ -20,7 +20,7 @@ var materialName="";
 	   +'<option value="1" id="1">liquid 2 </option>'
 	   +'<option value="2" id="2">liquid 3  </option>'
 	   +'<option value="3" id="3">liquid 4  </option>'
-	  
+	   +'<option value="4" id="4">liquid 5 </option>'
 	   +'</select>'
 	   +'</div>'
 	   +'</div>'
@@ -106,7 +106,7 @@ var materialName="";
 	
 	$("#materialSelection").change(function(){
 		materialValue1 =$("#materialSelection").children(":selected").attr("value");
-		   console.log("gfh" +materialValue1);
+//		   console.log("gfh" +materialValue1);
 		if(materialValue1==0)
 			{
 				materialName="Water";
@@ -123,7 +123,11 @@ var materialName="";
 		{
 			materialName="Disel";
 		}
-		console.log("materialName"+materialName);	
+		else if(materialValue1==4)
+		{
+			materialName="Honey";
+		}
+//		console.log("materialName"+materialName);	
 	});
 	$("#checkConfg").click(function(){
 		$("#checkConfg").prop("disabled", true);
@@ -169,9 +173,14 @@ var materialName="";
 				 	density=830;
 					  frequency=2970;
 				 }
+			 else  if(materialValue==4)
+			 {
+				 	color="#D1A745";
+				 	density=1400;
+					  frequency=2550;
+				 }
 
-			 	 
-
+			
 		 });
 
 		

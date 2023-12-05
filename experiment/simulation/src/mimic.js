@@ -2,6 +2,7 @@
  function mimic (color ,frequency,density){
 //	console.log("Hello");
 	$('#canvas-div').html("");
+	$('#centerText2').html("MIMIC");
     $('#canvas-div').removeAttr('width');
 	$('#canvas-div').removeAttr('height');
 	var w = 900;
