@@ -1,0 +1,73 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": " What is the primary purpose of a density sensor?",
+      "answers": {
+         "a": " Measure temperature.",
+        "b": "Determine mass per unit volume",
+        "c": "Count particles in a substance",
+        "d": "Detect electromagnetic radiation"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "Determine mass per unit volume"
+    },
+    {
+      "question": "Which physical property does a density sensor rely on for its measurements?",
+      "answers": {
+        "a": " Color",
+        "b": "Viscosity",
+        "c": "Density",
+        "d": "Electrical conductivity"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "Density"
+    },
+    {
+      "question": "What type of substances can be measured using a density sensor?",
+      "answers": {
+        "a": "Gases only",
+        "b": "Liquids only",
+        "c": " Solids only",
+        "d": "Gases, liquids, and solids"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "Gases, liquids, and solids"
+    },
+	{
+      "question": "In which units is density commonly expressed?",
+      "answers": {
+        "a": " Grams per liter",
+        "b": "Meters per second",
+        "c": "Degrees Celsius",
+        "d": "Pascals"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "Grams per liter"
+    },
+	
+	{
+      "question": "How does a density sensor work in determining density?",
+      "answers": {
+        "a": "Measures resistance",
+        "b": "Calculates volume",
+        "c": "Analyzes pressure",
+        "d": "Divides mass by volume"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "Divides mass by volume"
+    }
+  
+  
+  
+  
+  
+  
+  
+  ]
+}
