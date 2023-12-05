@@ -30,16 +30,17 @@ function tableCreate(masterJson)
 	
 				$("#tableDesign").html(tableMainDiv);
 
-				if(masterJson.demo.length==4)
+				if(masterJson.demo.length==5)
 					{
 //					$("#modelBody").html("finish");
-//					alert("finish");
+				//	alert("finish");
+					$("#modelBody").html('');
+					$("#modelBody").html('<img src="images/cong.gif" class="img-fluid" > ');
 					$("#checkConfg").prop('disabled',true);
 					
 					$("#materialSelection").prop('disabled',true);
 					$("#selectFlow").prop('disabled',true);
-					
-					$("#modelBody").html('<img src="images/cong.gif" class="img-fluid" > ');
+				
 					
 					}
 
