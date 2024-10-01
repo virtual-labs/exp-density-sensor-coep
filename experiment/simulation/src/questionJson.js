@@ -6,38 +6,38 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Ice floats on water because:",
+					"QC": "What is the primary working principle of a resonant sensor for liquid density measurement?",
 					"ANS": [{
 						"ANSID": false,
-						"content": "ice has more density than water"
+						"content": "Absorption of light"
 					}, {
-						"ANSID": false,
-						"content": "ice has more temperature than water"
-					}, {
-						"ANSID": false,
-						"content": "ice is heavier than water"
-					},{
 						"ANSID": true,
-						"content": "ice has less density than water "
+						"content": "Vibration of an element at its resonant frequency"
+					}, {
+						"ANSID": false,
+						"content": "Measurement of electrical resistance"
+					},{
+						"ANSID": false,
+						"content": "Magnetic field fluctuation"
 					}]
 				}]
 			}, {
 
 				"QUES": [{
 					
-					"QC": " The relative density of a substance is 13.6 and its volume is 20 cm³. What is its mass?",
+					"QC": " The resonant frequency of a resonant sensor changes in response to:",
 					"ANS": [{
+						"ANSID": false,
+						"content": "Temperature variations"
+					}, {
 						"ANSID": true,
-						"content": "272 g"
+						"content": "The density of the surrounding liquid "
 					}, {
 						"ANSID": false,
-						"content": "2.72 g "
+						"content": "Pressure differences"
 					}, {
 						"ANSID": false,
-						"content": "27.2 g"
-					}, {
-						"ANSID": false,
-						"content": "0.06 g"
+						"content": "Electrical interference"
 					}]
 					
 				}]
@@ -45,19 +45,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "When we heat floating ice in a pot, after converting into the water, the level of water will",
+					"QC": "Which element in a resonant sensor typically vibrates?",
 					"ANS": [{
+						"ANSID": false,
+						"content": "A piezoelectric crystal"
+					}, {
+						"ANSID": false,
+						"content": "A metal wire"
+					}, {
 						"ANSID": true,
-						"content": "remain the same"
+						"content": "A vibrating tube or fork"
 					}, {
 						"ANSID": false,
-						"content": "increase"
-					}, {
-						"ANSID": false,
-						"content": "decrease"
-					}, {
-						"ANSID": false,
-						"content": "increase and then decrease"
+						"content": "A plastic membrane"
 					}]
 					
 				}]
@@ -65,19 +65,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Clouds float in the air, because of",
+					"QC": "The change in resonant frequency in a liquid-filled vibrating tube is proportional to the:",
 					"ANS": [{
+						"ANSID": false,
+						"content": "Viscosity of the liquid"
+					}, {
 						"ANSID": true,
-						"content": "low density "
+						"content": "Volume of the liquid"
 					}, {
 						"ANSID": false,
-						"content": "low viscosity"
+						"content": "Density of the liquid"
 					}, {
 						"ANSID": false,
-						"content": "high viscosity"
-					}, {
-						"ANSID": false,
-						"content": "high density"
+						"content": "Temperature of the liquid"
 					}]
 					
 				}]
@@ -85,19 +85,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": " When ice melts, its density ",
+					"QC": "Which of the following is a common type of resonant sensor used for liquid density measurement?",
 					"ANS": [{
 						"ANSID": false,
-						"content": "Becomes Zero"
+						"content": "Capacitive sensor"
 					}, {
 						"ANSID": false,
-						"content": "Remains the same"
+						"content": "Optical sensor"
 					}, {
 						"ANSID": true,
-						"content": "Increases"
+						"content": "Tuning fork sensor"
 					}, {
 						"ANSID": false,
-						"content": "Decreases"
+						"content": "Acoustic sensor"
 					}]
 					
 				}]
@@ -105,19 +105,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Mass/Volume =?",
+					"QC": "A higher liquid density in a resonant sensor results in:",
 					"ANS": [{
 						"ANSID": false,
-						"content": " Pressure"
+						"content": " An increase in the resonant frequency"
 					}, {
 						"ANSID": true,
-						"content": "Density"
+						"content": "A decrease in the resonant frequency"
 					}, {
 						"ANSID": false,
-						"content": "Area"
+						"content": "No change in the resonant frequency"
 					}, {
 						"ANSID": false,
-						"content": "Force"
+						"content": "An unstable resonant frequency"
 					}]
 					
 				}]

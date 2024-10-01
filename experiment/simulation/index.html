@@ -45,54 +45,51 @@
 		
 	</header>
 
+<div class="row" style="margin-top:10px;">
+ <div class="col-sm-1">
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">
+    Procedure
+  </button>
 
-
-<!-- <audio id="myAudio"> -->
-<!--   <source src="C:\Users\Sujata\Downloads\audio1.mp3" type="audio/ogg"> -->
-<!--   <source src="horse.mp3" type="audio/mpeg"> -->
-<!--   Your browser does not support the audio element. -->
-<!-- </audio> -->
-<!-- 	<button class="button" id="mimic">Mimic</button> -->
-<div  class="row container-fluid" id="">
-<div class="col-lg-5">
-</div>
-<div class="col-lg-6">
-</div>
-<div class="col-lg-1" >
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" id="referenceGraph" data-toggle="modal" data-target="#exampleModalCenter" style="margin-top:10px;">
- Reference Graph
-</button>
-
-<!-- Modal -->
-<div class="modal fade-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" id="graphModel">
-    
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-<!--         <button type="button" class="btn btn-primary">Cancel</button> -->
+  <!-- The Modal -->
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+         
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+  <b style="color:#795548;">     
+ Step 1 : Select liquid service, from drop down menu.<br>
+ Step 2 : Click on "SIMULATION" button.<br>
+ Step 3 : Observe frequency and calculate vibration cycle time T.<br>
+ Step 4 : Calculate liquid service density.<br>
+ Step 5 : Identify liquid service.<br>
+ Step 6 : Repeat step 1 to 5 for different services.<br>
+</b> 
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
       </div>
     </div>
-    
   </div>
+  
 </div>
-</div>
-</div>
-
 <div  class="row container-fluid" id="main-div1">
-	<div class="col-lg-5" id="main-div" >
+	<div class="col-lg-6" id="main-div" >
 				<div class="panel panel-primary">
-	      			<div class="panel-heading " id="panelHeading1"><center id="centerText1"><h4 class="panelHeadingBold">CONFIGURATION </h4></center>
+	      			<div class="panel-heading " id="panelHeading1">
+					<center id="centerText1" class="panelHeadingBold">CONFIGURATION </center>
 	      			</div>
 	     			<div class="panel-body" id="main-div-conf" >
 	     			
@@ -104,19 +101,35 @@
 	   	</div>
 	   
 	   
-			<div class="col-lg-7" id="canvas">
+			<div class="col-lg-6" id="canvas">
 	             <div class="panel panel-primary" >
-	      			<div class="panel-heading " id="panelHeading2" ><center id="centerText2"><h4 class="panelHeadingBold"> DIAGRAM</h4></center>
+	      			<div class="panel-heading " id="panelHeading2" ><center id="centerText2" class="panelHeadingBold"> DIAGRAM</center>
 	      			</div>
 	      			<label  id="counter"></label>
+	      			<div class="panel-body"  >
+	      			<div class="col-sm-4" >
+
+	      			</div>
+	      			<div class="col-sm-4" id="canvas-div1">
+	  			 	
+	      			</div>
+	      			<div class="col-sm-4" >
+	   
+	      			</div>
+	      		</div>
 	      			<div class="panel-body" id="canvas-div" >
-	      			<div class="col-sm-6" >
-	      			<img src="images/density.jpg" class="img-responsive">
+	      			<div class="col-sm-4" >
+<!-- 	      			<img src="images/T12.jpg" class="img-responsive"> -->
 	      			</div>
+	      			<div class="col-sm-6" >
+	      			<img src="images/T12.jpg" class="img-responsive">
+	      			</div>
+					
+	      			<div class="col-sm-12" >
+	      			<img src="images/density1.png" class="img-responsive">
+	      			</div>
+					
 	      			
-	      			<div class="col-sm-6" >
-	      			<img src="images/density2.jpg" class="img-responsive">
-	      			</div>
 	      			</div>
 	      			
 					

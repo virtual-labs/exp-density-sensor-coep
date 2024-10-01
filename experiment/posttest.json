@@ -2,78 +2,78 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What is the principle behind the operation of a vibrating tube density sensor?",
+      "question": "1)In industrial settings, resonant density sensors are often used in:",
       "answers": {
-        "a": "Refraction of light",
-        "b": " Resonance frequency changes",
-        "c": "Magnetic field variations",
-        "d": "Electrochemical reactions"
+        "a": "Pressure chambers",
+        "b": " Flow systems and tanks",
+        "c": "Electrical circuits",
+        "d": "Gas chromatography equipment"
       },
       
       "correctAnswer": "b",
-      "difficulty": "Resonance frequency changes"
+      "difficulty": "Flow systems and tanks"
     },
     {
-      "question": "Which factor can affect the accuracy of a density sensor in a real-world application?",
+      "question": "2)The response time of a resonant sensor for liquid density measurement is generally:",
       "answers": {
-        "a": "Environmental humidity",
-        "b": "Source voltage stability",
-        "c": "Color of the substance",
-        "d": "Magnetic interference"
-      },
-     
-      "correctAnswer": "a",
-      "difficulty": "Environmental humidity"
-    },
-    {
-      "question": "In the context of density sensors, what is calibration, and why is it important?",
-      "answers": {
-        "a": "Adjusting the sensor to a known standard; ensures accurate measurements",
-        "b": "Cleaning the sensor components; enhances durability",
-        "c": "Upgrading the sensor firmware; improves performance",
-        "d": "Changing the sensor's physical structure; adapts to different substances"
-      },
-     
-      "correctAnswer": "a",
-      "difficulty": "Adjusting the sensor to a known standard; ensures accurate measurements"
-    },
-	{
-      "question": "Which type of density sensor is commonly used in the food and beverage industry for quality control?",
-      "answers": {
-        "a": "Ultrasonic density sensor",
-        "b": "Coriolis mass flow meter",
-        "c": "Optical density sensor",
-        "d": "Capacitance density sensor"
+        "a": "Very slow, requiring several minutes",
+        "b": "Very fast, within milliseconds to seconds",
+        "c": "Variable, depending on the liquid color",
+        "d": "Based on manual adjustments"
       },
      
       "correctAnswer": "b",
-      "difficulty": "Capacitance density sensor"
+      "difficulty": "Very fast, within milliseconds to seconds"
+    },
+    {
+      "question": "3)The main challenge in measuring highly viscous liquids using resonant sensors is:",
+      "answers": {
+        "a": "Reduced frequency shift sensitivity",
+        "b": "Mechanical damage to the sensor",
+        "c": "Excessive damping of the sensors vibrations",
+        "d": "Increased electrical interference"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "Excessive damping of the sensor's vibrations"
+    },
+	{
+      "question": "4)Which of the following is a common application for resonant liquid density sensors?",
+      "answers": {
+        "a": "Measuring air density in aircraft",
+        "b": "Determining the salinity of water",
+        "c": "Testing soil density",
+        "d": "Measuring gas density in oil pipelines"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": " Determining the salinity of water"
     },
 	
 	{
-      "question": "What role does temperature compensation play in a density sensor?",
+      "question": "5)A resonant sensor’s ability to measure density is most accurate when:",
       "answers": {
-        "a": "Adjusts measurements based on substance color",
-        "b": "Accounts for variations in substance viscosity",
-        "c": "Corrects for temperature-induced density changes",
-        "d": "Enhances sensitivity to particle count"
+        "a": "The liquid is completely still",
+        "b": "The liquid is continuously flowing",
+        "c": "The sensor is exposed to open air",
+        "d": "The liquid is mixed with air bubbles"
       },
      
-      "correctAnswer": "c",
-      "difficulty": "Corrects for temperature-induced density changes"
+      "correctAnswer": "a",
+      "difficulty": "The liquid is completely still"
     },
   
   {
-      "question": "Which of the following materials is commonly used in the construction of the sensing element in a density sensor?",
+      "question": "6)Damping in a resonant sensor refers to:",
       "answers": {
-        "a": "Aluminum",
-        "b": "Rubber",
-        "c": "Quartz",
-        "d": "PVC"
+        "a": "The reduction in vibration amplitude due to liquid viscosity",
+        "b": "The shift in resonant frequency",
+        "c": "The increase in mass due to liquid density",
+        "d": "The alteration of electrical signals"
       },
      
-      "correctAnswer": "c",
-      "difficulty": "Quartz"
+      "correctAnswer": "a",
+      "difficulty": "The reduction in vibration amplitude due to liquid viscosity"
     }
   
   
