@@ -58,7 +58,7 @@
 				+ '       <p id="modelMsg">This is a small modal.</p>'
 				+ '     </div>'
 				+ '     <div class="modal-footer">'
-				+ '       <button type="button" id="next" class="btn btn-danger" data-dismiss="modal" >NEXT</button>'
+				+ '       <button type="button" id="next1" class="btn btn-danger" data-dismiss="modal" >NEXT</button>'
 				+ '     </div>'
 				+ '   </div>'
 				+ ' </div>'
@@ -124,7 +124,7 @@
 		   					
 					}
 					
-					$('#next').on('click', function() {	
+					$('#next1').on('click', function() {	
 						if(flag==1){
 							$("#canvas-div").html();
 							$("#main-div-conf").html();

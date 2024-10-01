@@ -2,65 +2,65 @@
   "version": 2.0,
   "questions": [
     {
-      "question": " What is the primary purpose of a density sensor?",
+      "question": "1)What is the primary working principle of a resonant sensor for liquid density measurement?",
       "answers": {
-         "a": " Measure temperature.",
-        "b": "Determine mass per unit volume",
-        "c": "Count particles in a substance",
-        "d": "Detect electromagnetic radiation"
+         "a": "Absorption of light",
+        "b": "Vibration of an element at its resonant frequency",
+        "c": "Measurement of electrical resistance",
+        "d": "Magnetic field fluctuation"
       },
       
       "correctAnswer": "b",
-      "difficulty": "Determine mass per unit volume"
+      "difficulty": "Vibration of an element at its resonant frequency"
     },
     {
-      "question": "Which physical property does a density sensor rely on for its measurements?",
+      "question": "2)The resonant frequency of a resonant sensor changes in response to:",
       "answers": {
-        "a": " Color",
-        "b": "Viscosity",
-        "c": "Density",
-        "d": "Electrical conductivity"
+        "a": "Temperature variations",
+        "b": "The density of the surrounding liquid",
+        "c": "Pressure differences",
+        "d": "Electrical interference"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "The density of the surrounding liquid"
+    },
+    {
+      "question": "3)Which element in a resonant sensor typically vibrates?",
+      "answers": {
+        "a": "A piezoelectric crystal",
+        "b": "A metal wire",
+        "c": "A vibrating tube or fork",
+        "d": "A plastic membrane"
       },
      
       "correctAnswer": "c",
-      "difficulty": "Density"
-    },
-    {
-      "question": "What type of substances can be measured using a density sensor?",
-      "answers": {
-        "a": "Gases only",
-        "b": "Liquids only",
-        "c": " Solids only",
-        "d": "Gases, liquids, and solids"
-      },
-     
-      "correctAnswer": "d",
-      "difficulty": "Gases, liquids, and solids"
+      "difficulty": "A vibrating tube or fork"
     },
 	{
-      "question": "In which units is density commonly expressed?",
+      "question": "4)The change in resonant frequency in a liquid-filled vibrating tube is proportional to the:",
       "answers": {
-        "a": " Grams per liter",
-        "b": "Meters per second",
-        "c": "Degrees Celsius",
-        "d": "Pascals"
+        "a": "Viscosity of the liquid",
+        "b": "Volume of the liquid",
+        "c": "Density of the liquid",
+        "d": "Temperature of the liquid"
       },
      
-      "correctAnswer": "a",
-      "difficulty": "Grams per liter"
+      "correctAnswer": "c",
+      "difficulty": "Density of the liquid"
     },
 	
 	{
-      "question": "How does a density sensor work in determining density?",
+      "question": "5)Which of the following is a common type of resonant sensor used for liquid density measurement?",
       "answers": {
-        "a": "Measures resistance",
-        "b": "Calculates volume",
-        "c": "Analyzes pressure",
-        "d": "Divides mass by volume"
+        "a": "Capacitive sensor",
+        "b": "Optical sensor",
+        "c": "Tuning fork sensor",
+        "d": "Acoustic sensor"
       },
      
-      "correctAnswer": "d",
-      "difficulty": "Divides mass by volume"
+      "correctAnswer": "c",
+      "difficulty": "Tuning fork sensor"
     }
   
   

@@ -4,17 +4,17 @@ function graph()
 	var xdata=[];
 	var ydata=[];
 	var graphData1=[];
-	for (var i = 0; i < masterJsonArr.length; i++)
+	for (var i = 0; i < masterJson.demo.length; i++)
 	 {
-		xdata[i] = masterJsonArr[i].density;
-		ydata[i] = masterJsonArr[i].frequency;
-		name[i]=masterJsonArr[i].materialType;
+		xdata[i] = masterJson.demo[i].frequency;
+		ydata[i] = masterJson.demo[i].rahoDash;
+		name[i]=masterJson.demo[i].materialType;
 		
 	}
-	for (var j = 0; j < masterJsonArr.length; j++) {
+	for (var j = 0; j < masterJson.demo.length; j++) {
 			tempArr = [];
-			tempArr[0] = parseInt(xdata[j]);
-			tempArr[1] = parseInt(ydata[j]);
+			tempArr[0] = parseFloat(xdata[j]);
+			tempArr[1] = parseFloat(ydata[j]);
 			graphData1.push(tempArr);
 
 	}
@@ -27,29 +27,28 @@ function graph()
 		console.log("After xdata "+xdata);
 		console.log("After ydata "+ydata);
 		
-		Xmax = parseInt(xdata[xdata.length - 1]);
-		Ymax = parseInt(ydata[ydata.length - 1]);
+		Xmax = parseFloat(xdata[xdata.length - 1]);
+		Ymax = parseFloat(ydata[ydata.length - 1]);
 		
 		console.log("Xmax "+Xmax);
 		console.log("Ymax "+Ymax);
-		Xmin = parseInt(xdata[0]);
-		Ymin= parseInt(ydata[0]);
-		
-		console.log("Xmin "+Xmin);
-		console.log("Ymin "+Ymin);
-		console.log(" Rotameter & magnatic flow meter  " + graphData1);
-		Highcharts.chart('graphModel', {
+		Xmin = parseFloat(xdata[0]);
+		Ymin= parseFloat(ydata[0]);
+
+		Highcharts.chart('canvas-div', {
 			title: {
-				text: ' Natural frequency of the tuning fork changes with the liquid density '
+				text: 'Frequency v/s Density '
 			},
 //			subtitle: {
 //				text: 'Meter Constant is  pulses (per/ltr)'
 //			},
 			xAxis: {
-				min: 700,
-				max: 1500,
+				Xmin: 1500,
+				Xmax: 3500,
+				
 				title: {
-					text: 'density ( Kg/m&sup3;)'
+					text: 'frequency (Hz)'
+					
 				},
 				labels: {
 		            format: '{value} '
@@ -57,14 +56,11 @@ function graph()
 			
 			},
 			yAxis:
-			
-			
-			
 			{
-				min: 2000,
-				max: 3500,
+				Ymin: 500,
+				Ymax: 1500,
 				title: {
-					text: 'frequency (Hz)'
+					text: 'density ( Kg/m&sup3;)'
 				},
 				labels: {
 		            format: '{value}'
@@ -97,7 +93,7 @@ function graph()
 //				},
 				
 				{
-					type: 'line',
+					type: 'scatter',
 					name: name,
 
 					data: graphData1,
