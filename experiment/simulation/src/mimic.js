@@ -30,11 +30,11 @@
     var x1=150;
     var y1=150;
     var time=100;
-    var time1=1000;
+    var time1=10;
 	var	counter=0;
     pipeDesign();
   var   t1= paper.text(x1+325, 115,'0').attr({"font-size":25,"fill":"#DFFF00","stroke-width":10,"font-weight":"bold",'font-family':'digital-clock-font','font-size': 20});  
-  var t2= paper.text(x1+450, 115,'Density ').attr({"font-size":15,"fill":"#000","stroke-width":10});   
+  var t2= paper.text(x1+450, 115,'frequency (Hz)').attr({"font-size":15,"fill":"#000","stroke-width":10});   
   function pipeDesign()
     {
     	console.log("pipeDesign");
@@ -62,7 +62,7 @@
 		t1.toFront();
 		myTimer = setInterval(function(){
 			start.attr({'opacity':0});
-			if(counter-1==density){
+			if(counter-1==frequency){
 				tunning1.remove();
 				$("#checkConfg").prop('disabled',false);
 				
@@ -72,7 +72,7 @@
 				tunning2.toBack();
 				clearInterval(myTimer);
 //				AnswerPanel();
-				$("#CalculateActualFlow").prop("hidden", false);
+				$("#CalculateActualFlow2").prop("hidden", false);
 				start.attr({opacity: 10,'stroke-width':'2',"fill":"#3CB371"});
 				stop.attr({opacity: 100,'stroke-width':'8',"fill":"red"});
 			}
