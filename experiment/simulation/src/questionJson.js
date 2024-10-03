@@ -6,38 +6,38 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "What is the primary working principle of a resonant sensor for liquid density measurement?",
+					"QC": "What is the typical output of a resonant sensor used for liquid density measurement?",
 					"ANS": [{
 						"ANSID": false,
-						"content": "Absorption of light"
+						"content": "Voltage"
 					}, {
 						"ANSID": true,
-						"content": "Vibration of an element at its resonant frequency"
+						"content": "Frequency"
 					}, {
 						"ANSID": false,
-						"content": "Measurement of electrical resistance"
+						"content": "Current"
 					},{
 						"ANSID": false,
-						"content": "Magnetic field fluctuation"
+						"content": "Resistance"
 					}]
 				}]
 			}, {
 
 				"QUES": [{
 					
-					"QC": " The resonant frequency of a resonant sensor changes in response to:",
+					"QC": " Why is temperature compensation important in resonant sensors for liquid density measurement?",
 					"ANS": [{
 						"ANSID": false,
-						"content": "Temperature variations"
+						"content": "To improve power consumption"
+					}, {
+						"ANSID": false,
+						"content": "To eliminate viscosity effects "
 					}, {
 						"ANSID": true,
-						"content": "The density of the surrounding liquid "
+						"content": " To account for temperature-induced frequency changes"
 					}, {
 						"ANSID": false,
-						"content": "Pressure differences"
-					}, {
-						"ANSID": false,
-						"content": "Electrical interference"
+						"content": " To enhance the sensor’s mechanical stability"
 					}]
 					
 				}]
@@ -45,19 +45,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Which element in a resonant sensor typically vibrates?",
+					"QC": "Resonant sensors measure liquid density by detecting changes in:",
 					"ANS": [{
 						"ANSID": false,
-						"content": "A piezoelectric crystal"
+						"content": "Fluid pressure"
 					}, {
 						"ANSID": false,
-						"content": "A metal wire"
+						"content": "Sound intensity"
 					}, {
 						"ANSID": true,
-						"content": "A vibrating tube or fork"
+						"content": "Oscillation speed"
 					}, {
 						"ANSID": false,
-						"content": "A plastic membrane"
+						"content": "Surface tension"
 					}]
 					
 				}]
@@ -65,19 +65,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "The change in resonant frequency in a liquid-filled vibrating tube is proportional to the:",
+					"QC": "Resonant liquid density sensors are particularly advantageous in which of the following scenarios?",
 					"ANS": [{
 						"ANSID": false,
-						"content": "Viscosity of the liquid"
+						"content": "Measuring the density of solid objects"
 					}, {
 						"ANSID": true,
-						"content": "Volume of the liquid"
+						"content": "Real-time monitoring of fluid density in process control"
 					}, {
 						"ANSID": false,
-						"content": "Density of the liquid"
+						"content": "Measuring gas densities"
 					}, {
 						"ANSID": false,
-						"content": "Temperature of the liquid"
+						"content": "Operating in highly corrosive environments"
 					}]
 					
 				}]
@@ -85,19 +85,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Which of the following is a common type of resonant sensor used for liquid density measurement?",
+					"QC": "Which parameter of a resonant sensor is most directly affected by the density of the liquid being measured?",
 					"ANS": [{
 						"ANSID": false,
-						"content": "Capacitive sensor"
+						"content": "Voltage output"
 					}, {
 						"ANSID": false,
-						"content": "Optical sensor"
+						"content": "Amplitude of oscillation"
 					}, {
 						"ANSID": true,
-						"content": "Tuning fork sensor"
+						"content": "Mass loading"
 					}, {
 						"ANSID": false,
-						"content": "Acoustic sensor"
+						"content": "Current consumption"
 					}]
 					
 				}]
@@ -105,19 +105,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "A higher liquid density in a resonant sensor results in:",
+					"QC": "he primary benefit of using a resonant sensor over a traditional hydrometer is:",
 					"ANS": [{
 						"ANSID": false,
-						"content": " An increase in the resonant frequency"
+						"content": "Portability"
+					}, {
+						"ANSID": false,
+						"content": "Ability to measure solids"
 					}, {
 						"ANSID": true,
-						"content": "A decrease in the resonant frequency"
+						"content": "Continuous real-time monitoring"
 					}, {
 						"ANSID": false,
-						"content": "No change in the resonant frequency"
-					}, {
-						"ANSID": false,
-						"content": "An unstable resonant frequency"
+						"content": "Lower cost"
 					}]
 					
 				}]

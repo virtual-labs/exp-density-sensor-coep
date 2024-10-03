@@ -64,9 +64,9 @@
 			start.attr({'opacity':0});
 			if(counter-1==frequency){
 				tunning1.remove();
-				$("#checkConfg").prop('disabled',false);
+				$("#checkConfg").prop('disabled',true);
 				
-				$("#materialSelection").prop("disabled", false);
+				
 				$("#selectFlow").prop("disabled", false);
 				tunning2 = paper.image("images/tunning-removebg-preview.png", 452, 320,49, 100);
 				tunning2.toBack();
