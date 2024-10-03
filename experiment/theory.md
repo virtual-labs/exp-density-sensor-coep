@@ -2,7 +2,7 @@
 ### Introduction:
 
 A liquid density measurement sensor with the tuning fork as the sensitive component, which is
-based on the resonance principle, is described in this paper and developed to measure density of
+based on the resonance principle, is described and developed to measure density of
 liquids, static or in motion. It can measure liquid density directly, being a quasi-digital sensor, which
 not only has simple structure, small size, light weight, but also has high precision and reliability.
 
@@ -16,7 +16,7 @@ control unit output excitation signal to control the actuator and then drive the
 ![*Turbine_constr2*](images/image1_density.png)
 
 ##### Resonant Frequency of the Tuning Fork 
-As can be seen from the analysis above, the natural frequency of the tuning fork has important impact on the performance of the sensor. In this part of the paper, an approximate parameters model of the tuning fork is established, and the impact of liquid density, position of the tuning fork, temperature and structural parameters on the natural frequency of the tuning fork are also analyzed both theoretically and by simulation. 
+As can be seen from the analysis above, the natural frequency of the tuning fork has important impact on the performance of the sensor.an approximate parameters model of the tuning fork is established, and the impact of liquid density, position of the tuning fork, temperature and structural parameters on the natural frequency of the tuning fork are also analyzed both theoretically and by simulation. 
 
 The vibration of a tuning fork can be equivalent to the vibration of a cantilever beam. The vibration frequency can be obtained from calculating Euler Equation and described as follows: 
 
@@ -33,7 +33,7 @@ Equation (1) shows that the vibration frequency of the cantilever beam relates t
 Through the study on vibration of free-free beams under liquid, it is assumed that the liquid is ideal, incompressible and without spin, and based on the Laplace equation:
 ![*Turbine_constr2*](images/image4_formula3.png)
 
-we can get the liquid velocity potential function (x,z,t), and the changes of vibration frequency of a cantilever beam when the depth of the beam in the liquid changes. On this basis, we also have introduced the change of the first-order vibration frequency of the tuning fork when the depth in the liquid changes or the liquid density changes, as given by Equation (3) below: 
+we can get the liquid velocity potential function (x,z,t), and the changes of vibration frequency of a cantilever beam when the depth of the beam in the liquid changes. On this basis, we also have introduced the change of the first-order vibration frequency of the tuning fork when the depth in the liquid changes or the liquid density changes, as given by Equation (3) below: 
 
 ![*Turbine_constr2*](images/image5_formula4.png)
 
@@ -46,7 +46,7 @@ tuning fork per unit width. When the depth of the tuning fork in the liquid is f
 frequency decreases as the liquid density increases.
 
 The follow equation is often used to calculate the liquid density:
- ![*Turbine_constr2*](images/pdash.png)
+ ![*Turbine_constr2*](images/eq.png)
 ![*Turbine_constr2*](images/rhofurmula.png)
 are the sensor coefficients which can be determined through calibration experiments.
 ##### Tunning fork model

@@ -1,5 +1,5 @@
 ### Aim 
-Measurement of Density for different liquid services.
+Measurement of density for different liquid services.
 
 ### Objectives
 - Understand working of resonant sensor for density measurement.

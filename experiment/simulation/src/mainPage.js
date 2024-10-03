@@ -12,7 +12,7 @@ var materialName="";
 	var htm=''
 	
 	  +'<div class="row" >'
-	   +'<center style="font-size: 20px;font-weight: normal;margin-left:15px;color:#621b1b;"><b>Tunning fork design parameters</b></center>'
+	   +'<center style="font-size: 20px;font-weight: normal;margin-left:15px;color:#621b1b;"><b>Tuning fork design parameters</b></center>'
 	  +'</div>'
 	  +'<br>'
 		+'<div class="row" >'
@@ -147,6 +147,7 @@ var materialName="";
 	    		+ '</div>'
 	    		//model Close
 	    		
+			 $("#centerText1").html("CONFIGURATION");
 	      $("#main-div-conf").html(htm);
 	
 	$("#materialSelection").change(function(){
@@ -194,7 +195,7 @@ var materialName="";
 	
 	
 		 $('#materialSelection').change(function(){
-			 
+			 $("#checkConfg").prop("disabled", false);
 			 materialValue=$("#materialSelection").children(":selected").attr("value");
 			 if(materialValue==0)
 				 {
@@ -251,9 +252,11 @@ var materialName="";
 		  console.log("rahoDashPluse "+rahoDashPluse);
 		  console.log("rahoDashMinus "+rahoDashMinus);
 		  flow = $("#ans").val();
-		  if(flow==""){
+		  if(flow==" "){
+			  
 //			alert("Enter numeric value ");
 			  $("#modelBody").css("color", "red");
+			  $("#msgName").html("Message Box");
 			$("#modelBody").html("<b class='boldTextblue'>Enter numeric value.</b> ");
 			
 		}
@@ -267,8 +270,9 @@ var materialName="";
 //						$("#CalculateActualFlow2").prop("hidden", false);
 						$("#CalculateActualFlow1").prop("hidden", true);
 						   $("#CalculateActualFlow2").prop("hidden", true);
-						   $("#checkConfg").prop("disabled", true);
+						   $("#materialSelection").prop("disabled", false);
 				         $("#modelBody").css("color", "blue");
+						 $("#msgName").html("Message Box");
 						$("#modelBody").html("<b class='boldTextblue'>Select Next Service.</b>");
 						 $("#ans,#btnAnsCheck1").prop("disabled", true);
 						id=0;
@@ -278,12 +282,13 @@ var materialName="";
 					}
 					else{
 						 $("#modelBody").css("color", "red");
+						 $("#msgName").html("Message Box");
 							$("#modelBody").html("<b class='boldTextblue'>Entered value is incorrect.Try it again.</b>");
 							
 					}
 				} else if (id == 4) {
 					 $("#modelBody").css("color", "blue");
-					
+					$("#msgName").html("Formula");
 					$("#modelBody").html("<img class='img-responsive' src='images/rhofurmula.png'></img>");
 					
 					
@@ -293,23 +298,25 @@ var materialName="";
 					if (rahoDashMinus<= flow && rahoDashPluse >= flow) {
 						
 //						$("#CalculateActualFlow2").prop("hidden", false);
-						
+						$("#msgName").html("Message Box");
 						$("#CalculateActualFlow1").prop("hidden", true);
 						   $("#CalculateActualFlow2").prop("hidden", true);
 //						$("#ans,#btnAnsCheck1").prop("disabled", true);
-						   $("#checkConfg").prop("disabled", true);
+						   $("#materialSelection").prop("disabled", false);
 						   tableCreate(masterJson);
 						   
 							$("#ans1").val(" ");
 							$("#ans").val(" ");
 						id=0;
 						 $("#modelBody").css("color", "blue");
+						  $("#msgName").html("Message Box");
 						$("#modelBody").html("<b class='boldTextblue'>Select Next Service.</b>");
 						
 					} else {
 						
 //						alert("correct answer is " + flow );
 						 $("#modelBody").css("color", "green");
+						  $("#msgName").html("Message Box");
 						$("#modelBody").html("<b class='boldTextblue'>Correct answer is " + rahoDash+'</b>');
 					}
 				}
@@ -326,9 +333,10 @@ var materialName="";
 		  $("body").css("padding","0px 0px 0px 0px");
 		  console.log("T "+T);
 		  flow = $("#ans1").val();
-		  if(flow==""){
+		  if(flow==" "){
 //			alert("Enter numeric value ");
 			  $("#modelBody").css("color", "red");
+			  $("#msgName").html("Message Box");
 			$("#modelBody").html("<b class='boldTextblue'>Enter numeric value</b> ");
 			
 		}
@@ -339,9 +347,11 @@ var materialName="";
 					
 						
 						 $("#modelBody").css("color", "blue");
-						
+						$("#msgName").html("Message Box");
 						$("#modelBody").html("<b class='boldTextblue'>Calculate rho ( &#120588; ) </b>");
 						$("#CalculateActualFlow1").prop("hidden", false);
+						
+						
 						addToMasterJson();
 						
 						$("#ans1,#btnAnsCheck2").prop("disabled", true);
@@ -350,7 +360,7 @@ var materialName="";
 						
 					} else if (T != flow) {
 						 $("#modelBody").css("color", "red");
-
+					$("#msgName").html("Message Box");
 					$("#modelBody").html("<b class='boldTextRed'>Entered value is incorrect.Try it again.</b>");
 					
 					}
@@ -358,7 +368,7 @@ var materialName="";
 
 				} else if (id == 4) {
 					 $("#modelBody").css("color", "blue");
-					
+					$("#msgName").html("Formula");
 					$("#modelBody").html("<img class='img-responsive' src='images/qe.png'></img> ");
 					
 					
@@ -369,9 +379,11 @@ var materialName="";
 						
 					
 						$("#ans1,#btnAnsCheck2").prop("disabled", true);
+						
 						$("#CalculateActualFlow1").prop("hidden", false);
-						id=0;
+						id=0;$("#msgName").html("Message Box");
 						 $("#modelBody").css("color", "blue");
+						
 						$("#modelBody").html("<b class='boldTextblue'>Calculate rho( &#120588; )</b>");
 						addToMasterJson();
 //						tableCreate(masterJson);
@@ -381,6 +393,7 @@ var materialName="";
 						
 //						alert("correct answer is " + flow );
 						 $("#modelBody").css("color", "green");
+						 $("#msgName").html("Message Box");
 						$("#modelBody").html("<b class='boldTextblue'>Correct answer is " + T+'</b>');
 					}
 				}
