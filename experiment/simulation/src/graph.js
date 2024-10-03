@@ -43,11 +43,11 @@ function graph()
 //				text: 'Meter Constant is  pulses (per/ltr)'
 //			},
 			xAxis: {
-				Xmin: 1500,
+				Xmin: 0,
 				Xmax: 3500,
 				
 				title: {
-					text: 'frequency (Hz)'
+					text: 'Frequency (Hz)'
 					
 				},
 				labels: {
@@ -57,10 +57,10 @@ function graph()
 			},
 			yAxis:
 			{
-				Ymin: 500,
+				Ymin: 0,
 				Ymax: 1500,
 				title: {
-					text: 'density ( Kg/m&sup3;)'
+					text: 'Density ( Kg/m&sup3;)'
 				},
 				labels: {
 		            format: '{value}'
@@ -73,7 +73,7 @@ function graph()
 //			    },
 			    tooltip: {
 			        formatter: function() {
-			            return '  <b> Density :'  + this.x + '</b> <br> <b>frequency   :' + this.y + '</b> ';
+			            return '  <b> Frequency (Hz):'  + this.x + '</b> <br> <b> Density (&#120588;)  :' + this.y + '</b> ';
 			        }
 			    },
 			series: [
