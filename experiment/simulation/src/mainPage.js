@@ -412,7 +412,7 @@ var materialName="";
 				tempJson.rahoDash = rahoDash;
 				arrayJson.push(tempJson);
 				masterJson.demo = arrayJson;
-				console.log(masterJson);
+				
 		  }
 	  
 }
