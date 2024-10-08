@@ -46,11 +46,8 @@ tuning fork per unit width. When the depth of the tuning fork in the liquid is f
 frequency decreases as the liquid density increases.
 
 The follow equation is often used to calculate the liquid density:
-
  ![*Turbine_constr2*](images/eq.png)
- 
 ![*Turbine_constr2*](images/rhofurmula.png)
-
 are the sensor coefficients which can be determined through calibration experiments.
 ##### Tunning fork model
 Stainless steel 316 L, whose material properties are shown in Table 1, was used to make the tuning
@@ -60,12 +57,10 @@ actuators with simple structure and low power consumption. The bi-piezoelectric 
 symmetrical, perpendicular to the tuning fork,
 
 ![*Turbine_constr2*](images/table2.png)
-
 (a) Front view of the tuning fork; (b) Left view of the tuning fork; ( c ) Back view
 of the tuning fork (unit: mm).
 
 ![*Turbine_constr2*](images/density1.png)
-
 ![*Turbine_constr2*](images/table1.png)
 
 The tuning fork and is supported by a flange whose stiffness is The flange does not vibrate, therefore, it does not affect the liquid density measurement process.

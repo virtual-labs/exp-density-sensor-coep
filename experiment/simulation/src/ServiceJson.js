@@ -32,7 +32,7 @@ masterJson = {
 masterJsonArr.push(masterJson);
 
 masterJson = {
-		"materialType": "Disel",
+		"materialType": "Diesel",
 		"density": "830",
 		"frequency":"2970",
 		"T":"357.861",
@@ -50,8 +50,6 @@ masterJson = {
 
 masterJsonArr.push(masterJson);
 
-
-console.log(masterJsonArr);
 
 
 
