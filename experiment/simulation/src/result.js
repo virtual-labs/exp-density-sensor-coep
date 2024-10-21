@@ -61,11 +61,9 @@ function result(){
 		+'      </tr>'
 		+'      <tr>'
 		+'        <td><span class="stageLabel">Configuration</span></td>'
-		+'        <td>'
-		+'         <div class="alert alert-success attainedText">'
-	    +'         <center><strong>Attained</strong> </center>'
-	     +'       </div>'
-		+'       </td id="configuration">'
+		+'        <td id="config">'
+		
+		+'       </td>'
 		+'      </tr>'
 		+'      <tr>'
 		+'        <td><span class="stageLabel">Application</span></td>'
@@ -352,7 +350,7 @@ function result(){
 		
 //		console.log(resultMasterJson.question.correctQuestion);
 		CorrectAnswer=parseInt(resultMasterJson.question.correctQuestion);
-		var tempBasicKnowledge=parseInt((CorrectAnswer/5)*100);
+		var tempBasicKnowledge=parseInt((5/CorrectAnswer)*100);
 		console.log("temp "+tempBasicKnowledge);
 		
 		
@@ -372,14 +370,15 @@ function result(){
 			     +'  </div>'
 			     $("#basicKnowledge").html(str);
 			}
-		congCounterTotal=parseInt(resultMasterJson.cogAttemptCounterT+resultMasterJson.cogAttemptCounterF);
-		var tempCalPer=parseInt((congCounterTotal/10)*100);
+		var congCounterTotal=parseInt(resultMasterJson.cogAttemptCounterT+resultMasterJson.cogAttemptCounterF);
+		var tempCalPer=parseInt((10/congCounterTotal)*100);
+		console.log("tempCalPer "+tempCalPer);
 		if(tempCalPer>=60){
 			 var str=''
 				 +' <div class="alert alert-success attainedText">'
 			    +'  <center><strong>Attained</strong> </center>'
 			     +'  </div>'
-			     $("#configuration").html(str);
+			     $("#config").html(str);
 			     
 		}
 		else
@@ -388,10 +387,11 @@ function result(){
 				 +' <div class="alert alert-danger attainedText">'
 			    +'  <center><strong>Not Attained</strong> </center>'
 			     +'  </div>'
-			     $("#configuration").html(str);
+			     $("#config").html(str);
 			}
-		appCounterTotal=parseInt(resultMasterJson.appAttemptCounterT+resultMasterJson.appAttemptCounterR);
-		var tempCalPer1=parseInt((appCounterTotal/10)*100);
+		var appCounterTotal1=parseInt(resultMasterJson.appAttemptCounterT+resultMasterJson.appAttemptCounterR);
+		var tempCalPer1=parseInt((10/appCounterTotal1)*100);
+		console.log("tempCalPer1 "+tempCalPer1);
 		if(tempCalPer1>=60){
 			 var str=''
 				 +' <div class="alert alert-success attainedText">'
@@ -444,7 +444,7 @@ function result(){
 	        }
 	    },
 	    series: [{
-	        name: 'Share',
+	        name: '',
 	        data: [
 	            { name: 'Basic Knowledge', y: 200 },
 	            { name: 'Configuration', y: tempCalPer },
