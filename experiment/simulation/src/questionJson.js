@@ -37,7 +37,7 @@ QuestionsJSON = {
 						"content": " To account for temperature-induced frequency changes"
 					}, {
 						"ANSID": false,
-						"content": " To enhance the sensor’s mechanical stability"
+						"content": " To enhance the sensors mechanical stability"
 					}]
 					
 				}]

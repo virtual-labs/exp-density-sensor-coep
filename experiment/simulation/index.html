@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/graph.css">
 	<link rel="stylesheet" href="css/hall.css">
-
+<link rel="stylesheet" href="css/result.css">
 </head>
 <style>
 .blink {
@@ -44,11 +44,17 @@
 		<span id="colgName">COEP Technological University , PUNE</span>		
 		
 	</header>
-
 <div class="row" style="margin-top:10px;">
- <div class="col-sm-1">
+<div class="col-sm-7">
+</div>
+<div class="col-sm-1">
+<button type="button" class="btn btn-danger" id="saveAsJpg" hidden> 
+    Save As .jpg
+  </button>
+</div>
+ <div class="col-sm-3">
   <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">
+  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1" id="procedure">
     Procedure
   </button>
 
@@ -67,13 +73,15 @@
         <div class="modal-body">
 	
   <b style="color:#795548;">  
-Attempt all questions. <br> 
- Step 1 : Select liquid service, from drop down menu.<br>
- Step 2 : Click on "SIMULATION" button.<br>
- Step 3 : Observe frequency and calculate vibration cycle time (T).<br>
- Step 4 : Calculate liquid service density.<br>
- Step 5 : Identify liquid service.<br>
- Step 6 : Repeat step 1 to 5 for different services.<br>
+Attempt all questions <br> 
+ Step 1 : Select liquid from drop down menu<br>
+ Step 2 : Understand tuning design parameters and liquid density<br>
+ Step 3 : Calculate cycle time and tuning fork frequency for selected liquid<br>
+ Step 4 : Repeat steps 1 to 3 for various liquids<br>
+ Step 5 : Go to application page and select liquid service<br>
+ Step 6 : Observe tuning fork frequency and calculate density<br>
+ Step 7 : Indentify liquid<br>
+ Step 8 : Repeat steps 5 and 7 for various liquids<br>
 </b> 
         </div>
         
@@ -87,11 +95,19 @@ Attempt all questions. <br>
   </div>
   
 </div>
-<div  class="row container-fluid" id="main-div1">
+<div class="col-sm-1">
+<button type="button" class="btn btn-warning" id="result" hidden>
+    Result
+  </button>
+</div>
+</div>
+<!-- <div class="row" style="margin-top:10px;"> -->
+
+<div  class="row " id="main-div1">
 	<div class="col-lg-6" id="main-div" >
 				<div class="panel panel-primary">
 	      			<div class="panel-heading " id="panelHeading1">
-					<center id="centerText1" class="panelHeadingBold">BASIC KNOWLEDGE  </center>
+					<center id="centerText1" class="panelHeadingBold" >BASIC KNOWLEDGE  </center>
 	      			</div>
 	     			<div class="panel-body" id="main-div-conf" >
 	     			
@@ -99,16 +115,20 @@ Attempt all questions. <br>
 	      			<div class="panel-body" id="tableDesign">
 	      			
 	      			</div>
+	      			<div class="panel-body" id="graph1" >
+	      			
+	      	     	</div>
 	     		</div>
 	   	</div>
 	   
 	   
 			<div class="col-lg-6" id="canvas">
 	             <div class="panel panel-primary" >
-	      			<div class="panel-heading " id="panelHeading2" ><center id="centerText2" class="panelHeadingBold"> DIAGRAM</center>
+	      			<div class="panel-heading " id="panelHeading2" >
+	      			<center id="centerText2" class="panelHeadingBold"> DIAGRAM</center>
 	      			</div>
-	      			<label  id="counter"></label>
-	      			<div class="panel-body"  >
+	      			
+	      			<div class="panel-body" id="tableDesign2" >
 	      			<div class="col-sm-4" >
 
 	      			</div>
@@ -118,8 +138,11 @@ Attempt all questions. <br>
 	      			<div class="col-sm-4" >
 	   
 	      			</div>
-	      		</div>
+	      			
 	      			<div class="panel-body" id="canvas-div" >
+	      			<div class="col-sm-12" id="tableTunning" >
+<!-- 	      			<img src="images/T12.jpg" class="img-responsive"> -->
+	      			</div>
 	      			<div class="col-sm-4" >
 <!-- 	      			<img src="images/T12.jpg" class="img-responsive"> -->
 	      			</div>
@@ -130,17 +153,23 @@ Attempt all questions. <br>
 	      			<div class="col-sm-12" >
 	      			<img src="images/density1.png" class="img-responsive">
 	      			</div>
-					
 	      			
-	      			</div>
-	      			
-					
-					
-	      			
+					</div>
+			
 	   			</div>
+	   			<div class="panel-body" id="graphActual" >
+	      			
+	      	     	</div>
+	       </div>
 	       </div>
 	</div>
+<!-- 	</div> -->
+<div  class="container-fluid resultMainPage" id="main-divResult" style="margin-bottom:60px;" hidden>
+
+	</div>
 	
+
+
 	<footer>
 Copyrights &copy; COEP - Virtual Lab
 </footer>
@@ -162,7 +191,7 @@ Copyrights &copy; COEP - Virtual Lab
   <script type="text/javascript" src="src/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 <script type="text/javascript" src="src/questionJson.js"></script>
 <script type="text/javascript" src="src/questions.js"></script>
@@ -170,10 +199,19 @@ Copyrights &copy; COEP - Virtual Lab
 
 
 <script type="text/javascript" src="src/mainPage.js"></script>
+<script type="text/javascript" src="src/mainPage1.js"></script>
   <script type="text/javascript" src="src/mimic.js"></script>
 
 <script type="text/javascript" src="src/table.js"></script>
+<script type="text/javascript" src="src/table1.js"></script>
 <script type="text/javascript" src="src/graph.js"></script>
+<script type="text/javascript" src="src/result.js"></script>
+<script>
+$("#result").click(function(){
+	$("#main-divResult").prop("hidden",false);
+	result();
+});
+</script>
 <!-- <script type="text/javascript" src="src/resultAnaylsis.js"></script> -->
 <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
 <!--   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->

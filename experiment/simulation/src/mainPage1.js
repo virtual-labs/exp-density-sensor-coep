@@ -1,49 +1,37 @@
-	arrayJson=[];
-masterJson={};
-materialValue1=0;	
-var density=0;
-var frequency=0;
-var T=0;
-var rahoDash=0;
-var materialName="";
-var AttemptCounterT=1;
-var AttemptCounterF=1;
-////mainpage function
- function mainPage(){
+var masterJson1={};
+var arrayJson1=[];
+var materialName;
+var color;
+var density;
+var frequency;
+var T;
+ var rahoDash;
+ var appAttemptCounterT=1;
+ var appAttemptCounterR=1;
+ function mainPage1(){
 	 var color;
-	var tableTunning=''
-	
-	  +'<div class="row" >'
-	   +'<center style="font-size: 20px;font-weight: normal;margin-left:15px;color:#621b1b;"><b>Tuning fork design parameters</b></center>'
-	  +'</div>'
-	  +'<br>'
-		+'<div class="row" >'
-		
-		 +'<div class="col-sm-12"  >'
-		 +'<table class="table table-bordered">'
-		 +'<tr>'
-		 
-		 +'<th><center><h4><b><i>&empty;</i></b></h4></center></th>'
-		 +'<th><center><h4><b><i>b</i></b></h4></center></th>'
-		 +'<th><center><h4><b><i>l</i></b></h4></center></th>'
-		 +'<th><center><h4><b><i>L</i></b></h4></center></th>'
-		 
-		  +'</tr>'
-		   +'<tr>'
-		 
-		  
-		 +'<th><center>20.00mm</center></th>'
-		 +'<th><center>13.00mm</center></th>'
-		 +'<th><center>25.50mm</center></th>'
-		 +'<th><center>32.00mm</center></th>'
-		 
-		  +'</tr>'
-		 +'</table>'
-		   +'</div>'
-		   
-	   
-	   +'</div>'
-	   $("#tableTunning").html(tableTunning);
+	 	
+	 	$("#canvas-div").html("<img src='images/tunningfork.png'></img>");
+	 	function generateUniqueRandomArray(length, min, max) {
+	 	    var randomArray = [];
+
+	 	    while (randomArray.length < length) {
+	 	      // Generate a random number between min and max
+	 	      var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+	 	      
+	 	      // Check if the number is already in the array
+	 	      if (!randomArray.includes(randomNumber)) {
+	 	        randomArray.push(randomNumber);
+	 	      }
+	 	    }
+
+	 	    return randomArray;
+	 	  }
+
+	 	  // Generate a unique random array with 5 numbers between 1 and 100
+	 	  var myArray = generateUniqueRandomArray(5, 0, 4);
+	 	  console.log(myArray);
+	 	  
 	   var htm=''
 	   +'<div class="row" >'
 	   +'<center style="font-size: 20px;font-weight: normal;margin-left:15px;color:#621b1b;"><b>Sensor Coefficients</b></center>'
@@ -85,28 +73,16 @@ var AttemptCounterF=1;
 
 	   +'<select  class="form-control selectConf"  id="materialSelection" style="height:auto;"  >'
 	   +'<option value="-1">--- Select Service --- </option>'
-	   +'<option value="0" id="0" >Water  </option>'
-	   +'<option value="1" id="1">Milk </option>'
-	   +'<option value="2" id="2">Petrol  </option>'
-	   +'<option value="3" id="3">Diesel  </option>'
-	   +'<option value="4" id="4">Honey </option>'
+	   +'<option value="'+myArray[0]+' "  >Liquid-'+parseInt(myArray[0]+1)+'  </option>'
+	   +'<option value="'+myArray[1]+' " >Liquid-'+parseInt(myArray[1]+1)+' </option>'
+	   +'<option value="'+myArray[2]+' " >Liquid-'+parseInt(myArray[2]+1)+'  </option>'
+	   +'<option value="'+myArray[3]+' " >Liquid-'+parseInt(myArray[3]+1)+' </option>'
+	   +'<option value="'+myArray[4]+' " >Liquid-'+parseInt(myArray[4]+1)+' </option>'
 	   +'</select>'
 	   +'</div>'
 	   +'</div>'
 	    +'<br>'
-	    // value 0 Water
-		// value 1 Milk	  
-		// value 2 Petrol
-		// value 3 Disel
-	    +'<div class="row"  style=" margin-bottom: 10px;">'
-	    +'<div class="col-sm-6" >'
-		 
-		   +'</div>'
-		   +'<div class="col-sm-6" id="densityDiv" hidden>'
-		   +'<b style="font-size: 15px;font-weight: normal;margin-left:15px;color:#621b1b;margin-bottom:5px;" id="densityName"> Density of Selected liquid service : </b>'
-		   +'</div>'
-		  +'</div>'
-		    
+	     
 	   +'<div class="row"  >'
 	   +'<div class="col-sm-12" id="mimicbtnquesAns" hidden>'
 	 +'<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" data-toggle="modal" data-target="#myModal"  id="checkConfg"  ><b>CALCULATION</b></button>'
@@ -126,7 +102,7 @@ var AttemptCounterF=1;
 	         +'</div>'
 	         + '<div class="row"  id="CalculateActualFlow3" hidden>'
 	         +'<div class="col-sm-5">'
-	         +'<label  id=""  class="" style="font-size:16px;margin:15px 10px ;">Calculate frequency (Hz)  : </label>'
+	         +'<label  id=""  class="" style="font-size:16px;margin:15px 10px ;">Calculate Density (&rho;)  : </label>'
 	         +'</div>'
 	         +'<div class="col-sm-4">'
 	         +'<input type="text" id="ans3" value="" style=margin:15px 10px;width:100%;"  class=" form-control" />'
@@ -169,16 +145,19 @@ var AttemptCounterF=1;
 	    		+ '</div>'
 	    		//model Close
 	    		
-			 $("#centerText1").html("CONFIGURATION");
+			 $("#centerText1").html("APPLICATION");
 	      $("#main-div-conf").html(htm);
-	
+	 	 var tempFrq=0; 
+			var frqWithError=0;
 	$("#materialSelection").change(function(){
 		
 		
 		materialValue=$("#materialSelection").children(":selected").attr("value");
 		 $('#materialSelection option[value="'+materialValue+'"]').prop('disabled', true);
 		 $('#materialSelection').prop('disabled', true);
+		 
 		 $('#materialSelection option[value="'+materialValue+'"]').css('background-color','#cbbdbd');
+			
 		 if(materialValue==0)
 			 {
 			    materialName="Water";
@@ -187,8 +166,12 @@ var AttemptCounterF=1;
 				  frequency="2727";
 				  T="366.645";
 				  rahoDash="998.003";
-				  $("#densityDiv,#CalculateActualFlow2").prop("hidden",false);
-					$("#densityName").html("Density of Selected liquid service : "+density+" (kg/m<sup>3</sup>)");
+				  randomSquence();
+				  console.log(" frqWithError "+frqWithError);
+				  mimic(color,frqWithError,density,materialName);
+				 
+//				  $("#CalculateActualFlow2").prop("hidden",false);
+//					$("#densityName").html("Density of Selected liquid service : "+density+" kg/m3");
 				  
 			 }
 		 else  if(materialValue==1)
@@ -199,8 +182,12 @@ var AttemptCounterF=1;
 				  T="368.448";
 				  rahoDash="1032";
 				  materialName="Milk";
-					$("#densityDiv,#CalculateActualFlow2").prop("hidden",false);
-					$("#densityName").html("Density of Selected liquid service : "+density+" (kg/m<sup>3</sup>)");
+				  randomSquence();
+				  console.log(" frqWithError "+frqWithError);
+				  mimic(color,frqWithError,density,materialName);
+				 
+//					$("#CalculateActualFlow2").prop("hidden",false);
+//					$("#densityName").html("Density of Selected liquid service : "+density+" kg/m3");
 					
 					
 					
@@ -208,13 +195,17 @@ var AttemptCounterF=1;
 		 else  if(materialValue==2)
 		 {
 			 	color="#e9e5be";
-			 	density="730";
+			 	density=730;
 				  frequency="2841";
 				  T="351.989";
 				  rahoDash="729.99125";
 				  materialName="Petrol";
-				  $("#densityDiv,#CalculateActualFlow2").prop("hidden",false);
-					$("#densityName").html("Density of Selected liquid service : "+density+" (kg/m<sup>3</sup>)");
+				  randomSquence();
+				  console.log(" frqWithError "+frqWithError);
+				  mimic(color,frqWithError,density,materialName);
+				 
+//				  $("##CalculateActualFlow2").prop("hidden",false);
+//					$("#densityName").html("Density of Selected liquid service : "+density+" kg/m3");
 				  
 				  
 			 }
@@ -226,8 +217,14 @@ var AttemptCounterF=1;
 				  T="357.861";
 				  rahoDash="830";
 				  materialName="Diesel";
-				  $("#densityDiv,#CalculateActualFlow2").prop("hidden",false);
-					$("#densityName").html("Density of Selected liquid service : "+density+" (kg/m<sup>3</sup>)");
+				  randomSquence();
+				  console.log(" frqWithError "+frqWithError);
+//				  $("#CalculateActualFlow2").prop("hidden",false);
+				  mimic(color,frqWithError,density,materialName);
+				  
+
+//				  $("#CalculateActualFlow2").prop("hidden",false);
+//					$("#densityName").html("Density of Selected liquid service : "+density+" kg/m3");
 				  
 			 }
 		 else  if(materialValue==4)
@@ -238,8 +235,13 @@ var AttemptCounterF=1;
 				  T="386.844";
 				  rahoDash="1399.990";
 				  materialName="Honey";
-				  $("#densityDiv,#CalculateActualFlow2").prop("hidden",false);
-					$("#densityName").html("Density of Selected liquid service : "+density+" (kg/m<sup>3</sup>)");
+				  randomSquence();
+				  console.log(" frqWithError "+frqWithError);
+				  mimic(color,frqWithError,density,materialName);
+				
+
+//				  $("#CalculateActualFlow2").prop("hidden",false);
+//					$("#densityName").html("Density of Selected liquid service : "+density+" kg/m3");
 				  
 			 }else{
 				
@@ -252,6 +254,28 @@ var AttemptCounterF=1;
 
 		
 	});
+	function randomSquence()
+	{frqWithError=0;
+		function getRandomInt(min, max) {
+		    return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+
+		let randomInt = getRandomInt(1, 2); // Generates a random integer between 1 and 2
+		console.log(randomInt);
+		if(randomInt==1){
+			console.log("plus error add 0.1% ");
+			 tempFrq=(parseInt(frequency)*0.1/100);
+			 frqWithError=parseInt(frequency)+parseInt(tempFrq);
+		}
+		else if(randomInt==2)
+			{
+			console.log("minus error 0.1% ");
+			 tempFrq=(parseInt(frequency)*0.1/100);
+		 frqWithError=parseInt(frequency)-parseInt(tempFrq);
+			}
+		console.log("frqWithError"+frqWithError);
+	}	
+	
 	$("#checkConfg").click(function(){
 		materialValue=$("#materialSelection").children(":selected").attr("value");
 		if(materialValue=="-1"){
@@ -278,15 +302,26 @@ var AttemptCounterF=1;
 	   });
 	
 	
+
+		
 	  var id=0;
+	
+	  var rahoDash=0;
+	 
+	  var id=0;
+	  var t1=0;
 	  $('#btnAnsCheck2').click(function(){
-		  $("#modelBody").css("font-size", "20px");
 		  // value 0 Water
 			// value 1 Milk	  
 			// value 2 Petrol
 			// value 3 Disel
+		  $("#modelBody").css("font-size", "20px");
 		  $("body").css("padding","0px 0px 0px 0px");
-		  console.log("T "+T);
+		 
+		  var temp=parseFloat(1/frqWithError);
+		  var temp1=temp*(Math.pow(10,6));
+	          t1  =temp1.toFixed(3);
+		  console.log("T1 "+t1);
 		  flow = $("#ans1").val();
 		  if(flow==" "){
 //			alert("Enter numeric value ");
@@ -298,56 +333,49 @@ var AttemptCounterF=1;
 		else
 			{
 				if (id <= 3) {
-					if (T == flow) {
+					if (t1 == flow) {
 					
 						
-						 $("#modelBody").css("color", "#621b1b");
+						 $("#modelBody").css("color", "blue");
 						$("#msgName").html("Message Box");
-						$("#modelBody").html("<b class='boldTextblue'>Calculate frequency(Hz) </b>");
+						$("#modelBody").html("<b class='boldTextblue'>Calculate rho(&#961;) </b>");
 						$("#CalculateActualFlow3").prop("hidden", false);
-						
-						
-//						addToMasterJson();
-						
 						$("#ans1,#btnAnsCheck2").prop("disabled", true);
 						
 						id=0;
 						
-					} else if (T != flow) {
+					} else if (t1 != flow) {
 						 $("#modelBody").css("color", "red");
 					$("#msgName").html("Message Box");
 					$("#modelBody").html("<b class='boldTextRed'>Entered value is incorrect.Try it again.</b>");
-					AttemptCounterT++;
+					appAttemptCounterT++;
 					}
 
 
 				} else if (id == 4) {
-					AttemptCounterT++;
 					 $("#modelBody").css("color", "#621b1b");
 					$("#msgName").html("Formula");
-					$("#modelBody").html("<img class='img-responsive' src='images/qe.png'></img> ");
-					
+					$("#modelBody").html("<img class='img-responsive' src='images/tFormula.png'></img> <br><b>f = Calculated Frequency.  </b>");
+					appAttemptCounterT++;
 					
 				} else {
 					flow = $("#ans1").val();
 
-					if (T == flow) {
+					if (t1 == flow) {
 						id=0;
 					    $("#ans1,#btnAnsCheck2").prop("disabled", true);
 						$("#msgName").html("Message Box");
 						 $("#modelBody").css("color", "#621b1b");
-						 $("#modelBody").html("<b class='boldTextblue'>Calculate frequency(Hz) </b>");
+						 $("#modelBody").html("<b class='boldTextblue'>Calculate rho(&#961;) </b>");
 							$("#CalculateActualFlow3").prop("hidden", false);
-//						addToMasterJson();
-//						tableCreate(masterJson);
-						
-						
+	
 					} else {
-						AttemptCounterT++;
+						
 //						alert("correct answer is " + flow );
 						 $("#modelBody").css("color", "green");
 						 $("#msgName").html("Message Box");
-						$("#modelBody").html("<b class='boldTextblue'>Correct answer is " + T+'</b>');
+						$("#modelBody").html("<b class='boldTextblue'>Correct answer is " + t1+'</b>');
+						appAttemptCounterT++;
 					}
 				}
 				id++;
@@ -355,17 +383,30 @@ var AttemptCounterF=1;
 			} 
 	  });
 	  var id=0;
+	  var m0;
+	  var m1;
+	  var m2;
 	  var calFrq=0;
 	  $('#btnAnsCheck3').click(function(){
-		  $("#modelBody").css("font-size", "20px");
+		  var m0="-2500.6773";
+		  var m1="-0.2756";
+		  var m2="0.02677";
 		  // value 0 Water
 			// value 1 Milk	  
 			// value 2 Petrol
+//		  alert("drghiuhgdugh");
 			// value 3 Disel
+		  $("#modelBody").css("font-size", "20px");
 		  $("body").css("padding","0px 0px 0px 0px");
 //		  var temp=Math.pow(10, -6);
-		 finalAns1=(1/(T*(Math.pow(10, -6))));
-		 finalAns=parseInt(finalAns1.toFixed(2));
+//		 finalAns1=(1/(T*(Math.pow(10, -6))));
+//		 finalAns=1;
+		  var m0=parseFloat(m0);
+		  var m1=parseFloat(m1);
+		  var m2=parseFloat(m2);
+		  var temppow=Math.pow(t1,2);
+		 var temp=m0 + (m1 * t1) + (m2 * temppow);
+		 finalAns=Math.round(temp);
 		 console.log("finalAns "+finalAns);
 		  flow = $("#ans3").val();
 		  if(flow==" "){
@@ -387,24 +428,25 @@ var AttemptCounterF=1;
 						$("#msgName").html("Message Box");
 						$("#modelBody").html("<b class='boldTextblue'>Select another liquid service. </b>");
 						calFrq=finalAns;
-						addToMasterJson();
-						tableCreate(masterJson);
+						 $('#materialSelection').prop('disabled', false);
+						addToMasterJson1();
+						tableCreate1(masterJson1);
 					
 					} else if (finalAns != flow) {
 						 $("#modelBody").css("color", "red");
 					$("#msgName").html("Message Box");
 					$("#modelBody").html("<b class='boldTextRed'>Entered value is incorrect.Try it again.</b>");
-					AttemptCounterF++;
+					appAttemptCounterR++;
 					}
 
 
 				} else if (id == 4) {
 					 $("#modelBody").css("color", "#621b1b");
 					$("#msgName").html("Formula");
-					$("#modelBody").html("<img class='img-responsive' src='images/fformula.png'></img><br><b style='color:red;'>Calculated frequency is rounded to next higher digit.</b> ");
-					
-					
-				} else {
+					$("#modelBody").html("<img class='img-responsive' src='images/rhofurmula.png'></img>");
+					appAttemptCounterR++;
+				} 
+				else {
 					flow = $("#ans3").val();
 
 					if (finalAns == flow) {
@@ -416,12 +458,13 @@ var AttemptCounterF=1;
 						$("#msgName").html("Message Box");
 						$("#modelBody").css("color", "#621b1b");
 						$("#modelBody").html("<b class='boldTextblue'>Select another liquid service.</b>");
-						addToMasterJson();
-						tableCreate(masterJson);
+						 $('#materialSelection').prop('disabled', false);
+						addToMasterJson1();
+						tableCreate1(masterJson1);
 						
 						
 					} else {
-						AttemptCounterF++;
+						appAttemptCounterR++;
 //						alert("correct answer is " + flow );
 						 $("#modelBody").css("color", "green");
 						 $("#msgName").html("Message Box");
@@ -433,21 +476,18 @@ var AttemptCounterF=1;
 			} 
 	  });
 
-		function addToMasterJson()
+		function addToMasterJson1()
 		  {
 			  tempJson={};	
 				tempJson.Servicetype=materialName;
-				tempJson.density = density;
-				tempJson.frequency = frequency;
-				tempJson.T = T;
-				tempJson.calcuatefrq=calFrq;
-				tempJson.rahoDash = rahoDash;
-				arrayJson.push(tempJson);
-				masterJson.demo = arrayJson;
-				console.log(masterJson);
-				
-				resultMasterJson.cogAttemptCounterF=AttemptCounterF;
-				resultMasterJson.cogAttemptCounterT=AttemptCounterT;
+				tempJson.frqWithError1 = frqWithError;
+				tempJson.t1 = t1;
+				tempJson.rahoDash = finalAns;
+				arrayJson1.push(tempJson);
+				masterJson1.demo = arrayJson1;
+				console.log(masterJson1);
+				resultMasterJson.appAttemptCounterR=appAttemptCounterR;
+				resultMasterJson.appAttemptCounterT=appAttemptCounterT;
 				console.log(resultMasterJson);
 				
 		  }
