@@ -1,4 +1,4 @@
-	
+	resultMasterJson={};
 	
 			var flag = false;
 			var myRadio = null;
@@ -119,7 +119,11 @@
 					 flag=1;
 						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully . Correct Answers Are : " + ansCount);
 
-						
+						 console.log("ansCount "+ansCount);
+							tempJson={};
+							tempJson.correctQuestion=ansCount;
+							resultMasterJson.question=tempJson;
+							console.log(resultMasterJson);
 						
 		   					
 					}
@@ -135,12 +139,6 @@
 
 						
 			});
-			$("#referenceGraph").click(function() {
-				
-				$("body").css("padding","0px 0px 0px 0px");
-				graph();	
 			
-					
-			});
 			
 	

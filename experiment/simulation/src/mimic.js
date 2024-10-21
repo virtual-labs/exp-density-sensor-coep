@@ -1,5 +1,6 @@
-
- function mimic (color ,frequency,density){
+var frqWithError=0;
+ function mimic (color,frequency,density,materialName){
+	  frqWithError=0;
 //	console.log("Hello");
 	$('#canvas-div').html("");
 	$('#centerText2').html("MIMIC");
@@ -20,6 +21,8 @@
 		paper.setViewBox(0, 0, w, h, true);
 		paper.setSize('100%', '100%');
 	}
+
+	
 	x=500;
 	y=50;
 	var width = 200;
@@ -34,7 +37,7 @@
 	var	counter=0;
     pipeDesign();
   var   t1= paper.text(x1+325, 115,'0').attr({"font-size":25,"fill":"#DFFF00","stroke-width":10,"font-weight":"bold",'font-family':'digital-clock-font','font-size': 20});  
-  var t2= paper.text(x1+450, 115,'frequency (Hz)').attr({"font-size":15,"fill":"#000","stroke-width":10});   
+  var t2= paper.text(x1+450, 115,'Frequency (Hz)').attr({"font-size":15,"fill":"#000","stroke-width":10,"font-weight":"bold"});   
   function pipeDesign()
     {
     	console.log("pipeDesign");
@@ -60,21 +63,28 @@
 		pipe.toFront();
 		counterRect.toFront();
 		t1.toFront();
+		 tempJson={};	
+//			tempJson.frqWithError=frqWithError;
+//			tempJson.materialName=materialName;
+//			arrayJson1.push(tempJson);
+//			
+//			masterJson1.demo = arrayJson1;
+//			console.log(masterJson1);
+			
 		myTimer = setInterval(function(){
 			start.attr({'opacity':0});
 			if(counter-1==frequency){
 				tunning1.remove();
 				$("#checkConfg").prop('disabled',true);
-				
-				
 				$("#selectFlow").prop("disabled", false);
 				tunning2 = paper.image("images/tunning-removebg-preview.png", 452, 320,49, 100);
 				tunning2.toBack();
 				clearInterval(myTimer);
 //				AnswerPanel();
-				$("#CalculateActualFlow2").prop("hidden", false);
+				
 				start.attr({opacity: 10,'stroke-width':'2',"fill":"#3CB371"});
 				stop.attr({opacity: 100,'stroke-width':'8',"fill":"red"});
+				$("#CalculateActualFlow2").prop("hidden", false);
 			}
 			else{	
 			t1.attr('text',counter);
