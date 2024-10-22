@@ -20,8 +20,8 @@ function result(){
 		+'</div>'
 		+'<div class="col-sm-6 " style="">'
 		+'<span>'
-		+'<h6><center style="font-weight: bold;border-style: dashed;" class="blink">Simulation Completed .</center></h6>'
-//		+'<br><h6><center style="font-weight: bold;">Simulation completed .</center></h6>'
+		+'<h6><center style="font-weight: bold;border-style: dashed;" class="blink">Experiment Completed</center></h6>'
+//		+'<br><h6><center style="font-weight: bold;">Experiment completed .</center></h6>'
 		+'</span>'
 		+'</div>'
 		+'<div class="col-sm-1">'
@@ -350,7 +350,7 @@ function result(){
 		
 //		console.log(resultMasterJson.question.correctQuestion);
 		CorrectAnswer=parseInt(resultMasterJson.question.correctQuestion);
-		var tempBasicKnowledge=parseInt((5/CorrectAnswer)*100);
+		var tempBasicKnowledge=parseInt((CorrectAnswer/5)*100);
 		console.log("temp "+tempBasicKnowledge);
 		
 		
@@ -418,7 +418,7 @@ function result(){
 	        type: 'pie'
 	    },
 	    title: {
-	        text: 'Pie Chart',
+	        text: ' ',
 	        align: 'left'
 	    },
 	    tooltip: {
