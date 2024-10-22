@@ -1,0 +1,84 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1)In industrial settings, resonant density sensors are often used in:",
+      "answers": {
+        "a": "Pressure chambers",
+        "b": " Flow systems and tanks",
+        "c": "Electrical circuits",
+        "d": "Gas chromatography equipment"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "Flow systems and tanks"
+    },
+    {
+      "question": "2)The response time of a resonant sensor for liquid density measurement is generally:",
+      "answers": {
+        "a": "Very slow, requiring several minutes",
+        "b": "Very fast, within milliseconds to seconds",
+        "c": "Variable, depending on the liquid color",
+        "d": "Based on manual adjustments"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "Very fast, within milliseconds to seconds"
+    },
+    {
+      "question": "3)The main challenge in measuring highly viscous liquids using resonant sensors is:",
+      "answers": {
+        "a": "Reduced frequency shift sensitivity",
+        "b": "Mechanical damage to the sensor",
+        "c": "Excessive damping of the sensors vibrations",
+        "d": "Increased electrical interference"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "Excessive damping of the sensor's vibrations"
+    },
+	{
+      "question": "4)Which of the following is a common application for resonant liquid density sensors?",
+      "answers": {
+        "a": "Measuring air density in aircraft",
+        "b": "Determining the salinity of water",
+        "c": "Testing soil density",
+        "d": "Measuring gas density in oil pipelines"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": " Determining the salinity of water"
+    },
+	
+	{
+      "question": "5)A resonant sensor’s ability to measure density is most accurate when:",
+      "answers": {
+        "a": "The liquid is completely still",
+        "b": "The liquid is continuously flowing",
+        "c": "The sensor is exposed to open air",
+        "d": "The liquid is mixed with air bubbles"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "The liquid is completely still"
+    },
+  
+  {
+      "question": "6)Damping in a resonant sensor refers to:",
+      "answers": {
+        "a": "The reduction in vibration amplitude due to liquid viscosity",
+        "b": "The shift in resonant frequency",
+        "c": "The increase in mass due to liquid density",
+        "d": "The alteration of electrical signals"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "The reduction in vibration amplitude due to liquid viscosity"
+    }
+  
+  
+  
+  
+  
+  ]
+}
