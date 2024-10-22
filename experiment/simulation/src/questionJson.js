@@ -105,7 +105,7 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "he primary benefit of using a resonant sensor over a traditional hydrometer is:",
+					"QC": "The primary benefit of using a resonant sensor over a traditional hydrometer is:",
 					"ANS": [{
 						"ANSID": false,
 						"content": "Portability"
