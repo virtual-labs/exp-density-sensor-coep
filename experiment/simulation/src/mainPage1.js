@@ -323,7 +323,7 @@ var T;
 	          t1  =temp1.toFixed(3);
 		  console.log("T1 "+t1);
 		  flow = $("#ans1").val();
-		  if(flow==" "){
+		  if(flow=="" || isAlphabetical(flow)){
 //			alert("Enter numeric value ");
 			  $("#modelBody").css("color", "red");
 			  $("#msgName").html("Message Box");
@@ -409,7 +409,7 @@ var T;
 		 finalAns=Math.round(temp);
 		 console.log("finalAns "+finalAns);
 		  flow = $("#ans3").val();
-		  if(flow==" "){
+		  if(flow=="" || isAlphabetical(flow)){
 //			alert("Enter numeric value ");
 			  $("#modelBody").css("color", "red");
 			  $("#msgName").html("Message Box");

@@ -288,7 +288,7 @@ var AttemptCounterF=1;
 		  $("body").css("padding","0px 0px 0px 0px");
 		  console.log("T "+T);
 		  flow = $("#ans1").val();
-		  if(flow==" "){
+		  if(flow=="" || isAlphabetical(flow)){
 //			alert("Enter numeric value ");
 			  $("#modelBody").css("color", "red");
 			  $("#msgName").html("Message Box");
@@ -358,17 +358,14 @@ var AttemptCounterF=1;
 	  var calFrq=0;
 	  $('#btnAnsCheck3').click(function(){
 		  $("#modelBody").css("font-size", "20px");
-		  // value 0 Water
-			// value 1 Milk	  
-			// value 2 Petrol
-			// value 3 Disel
+		  
 		  $("body").css("padding","0px 0px 0px 0px");
 //		  var temp=Math.pow(10, -6);
 		 finalAns1=(1/(T*(Math.pow(10, -6))));
 		 finalAns=parseInt(finalAns1.toFixed(2));
 		 console.log("finalAns "+finalAns);
 		  flow = $("#ans3").val();
-		  if(flow==" "){
+		  if(flow==""|| isAlphabetical(flow) ){
 //			alert("Enter numeric value ");
 			  $("#modelBody").css("color", "red");
 			  $("#msgName").html("Message Box");
