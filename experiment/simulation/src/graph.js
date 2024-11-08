@@ -1,7 +1,7 @@
 
 function graph()		
 {
-			$("#procedure").prop("hidden",true);
+			$("#btnForModal,#result,#simDemo").prop("hidden",true);
 		$("#result").prop("hidden",false);
 //		alert("GRAPH");
 		$("#centerText1").html("Table & Graph (Standard frequency) ");
@@ -120,6 +120,7 @@ function graph1()
     console.log(" densityData "+densityData);
     console.log(" frequencyData "+frequencyData);
     Highcharts.chart('graph1', {
+		credits: { enabled: false},
         chart: {
             type: 'column',
             backgroundColor: '#f4f4f4',
@@ -272,6 +273,7 @@ function graph2()
     console.log(" densityData "+densityData);
     console.log(" frequencyData "+frequencyData);
     Highcharts.chart('graphActual', {
+		credits: { enabled: false},
         chart: {
             type: 'column',
             backgroundColor: '#f4f4f4',

@@ -1,5 +1,5 @@
 function result(){
-	$("#procedure,#result").prop("hidden",true);
+	$("#procedure,#result,#simDemo").prop("hidden",true);
 	$("#main-divResult,#saveAsJpg").prop("hidden",false);
 	htm=''
 		+'<div class="row" >'
@@ -21,7 +21,7 @@ function result(){
 		+'<div class="col-sm-6 " style="">'
 		+'<span>'
 		+'<h6><center style="font-weight: bold;border-style: dashed;" class="blink">Experiment Completed</center></h6>'
-//		+'<br><h6><center style="font-weight: bold;">Experiment completed .</center></h6>'
+//		+'<br><h6><center style="font-weight: bold;">Experiment completed successfully</center></h6>'
 		+'</span>'
 		+'</div>'
 		+'<div class="col-sm-1">'
@@ -411,6 +411,7 @@ function result(){
 
 	// Build the chart
 	Highcharts.chart('graphDiv', {
+		credits: { enabled: false},
 	    chart: {
 	        plotBackgroundColor: null,
 	        plotBorderWidth: null,
@@ -446,7 +447,7 @@ function result(){
 	    series: [{
 	        name: '',
 	        data: [
-	            { name: 'Basic Knowledge', y: 200 },
+	            { name: 'Basic Knowledge', y: tempBasicKnowledge },
 	            { name: 'Configuration', y: tempCalPer },
 	            { name: 'Application', y: tempCalPer1 },
 	            { name: 'Mimic', y: 100 },
