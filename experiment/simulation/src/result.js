@@ -20,7 +20,7 @@ function result(){
 		+'</div>'
 		+'<div class="col-sm-6 " style="">'
 		+'<span>'
-		+'<h6><center style="font-weight: bold;border-style: dashed;" class="blink">Experiment Completed</center></h6>'
+		+'<h6><center style="font-weight: bold;border-style: dashed;" class="blink">Experiment completed successfully</center></h6>'
 //		+'<br><h6><center style="font-weight: bold;">Experiment completed successfully</center></h6>'
 		+'</span>'
 		+'</div>'
