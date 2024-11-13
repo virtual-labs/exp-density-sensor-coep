@@ -71,7 +71,7 @@
 				
 		
 
-			$("#main-div-conf").html(questions);
+			$("#canvas-div").html(questions);
 //			$("#click").on('click', function() {	
 //				mimic();
 //			});
@@ -128,12 +128,12 @@
 		   					
 					}
 					
-					$('#next1').on('click', function() {	
-						if(flag==1){
-							$("#canvas-div").html();
-							$("#main-div-conf").html();
+					$('#next1').on('click', function() { 	
+						//if(flag==1){
+							$("#canvas-div").html('');
+							$("#main-div-conf").html('');
 						    mainPage();
-						}
+						//}
 						
 					});
 
