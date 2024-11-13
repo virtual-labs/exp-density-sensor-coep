@@ -1,0 +1,73 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1)What is the primary working principle of a resonant sensor for liquid density measurement?",
+      "answers": {
+         "a": "Absorption of light",
+        "b": "Vibration of an element at its resonant frequency",
+        "c": "Measurement of electrical resistance",
+        "d": "Magnetic field fluctuation"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "Vibration of an element at its resonant frequency"
+    },
+    {
+      "question": "2)The resonant frequency of a resonant sensor changes in response to:",
+      "answers": {
+        "a": "Temperature variations",
+        "b": "The density of the surrounding liquid",
+        "c": "Pressure differences",
+        "d": "Electrical interference"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "The density of the surrounding liquid"
+    },
+    {
+      "question": "3)Which element in a resonant sensor typically vibrates?",
+      "answers": {
+        "a": "A piezoelectric crystal",
+        "b": "A metal wire",
+        "c": "A vibrating tube or fork",
+        "d": "A plastic membrane"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "A vibrating tube or fork"
+    },
+	{
+      "question": "4)The change in resonant frequency in a liquid-filled vibrating tube is proportional to the:",
+      "answers": {
+        "a": "Viscosity of the liquid",
+        "b": "Volume of the liquid",
+        "c": "Density of the liquid",
+        "d": "Temperature of the liquid"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "Density of the liquid"
+    },
+	
+	{
+      "question": "5)Which of the following is a common type of resonant sensor used for liquid density measurement?",
+      "answers": {
+        "a": "Capacitive sensor",
+        "b": "Optical sensor",
+        "c": "Tuning fork sensor",
+        "d": "Acoustic sensor"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "Tuning fork sensor"
+    }
+  
+  
+  
+  
+  
+  
+  
+  ]
+}
