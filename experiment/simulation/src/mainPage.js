@@ -10,6 +10,20 @@ var AttemptCounterT=1;
 var AttemptCounterF=1;
 ////mainpage function
  function mainPage(){
+	 var htm = '';
+	 htm = '<div class="col-sm-12" id="tableTunning" ></div>'
+			+'<div class="col-sm-6" >'
+	      		+'<img src="images/T12.jpg" class="img-responsive">'
+	      		+'	</div>'
+					
+	      		+'	<div class="col-sm-12" >'
+	      		+'	<img src="images/density1.png" class="img-responsive">'
+	      		+'	</div>'
+	 
+	 
+	 $("#canvas-div").html(htm);
+	 $("#centerText2").html("DIAGRAM");
+	 
 	 var color;
 	var tableTunning=''
 	
